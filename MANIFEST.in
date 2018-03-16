@@ -1,0 +1,3 @@
+include *.txt
+recursive-include *.txt
+recursive-include mongo_ftdc_draw/schemes/*.json
