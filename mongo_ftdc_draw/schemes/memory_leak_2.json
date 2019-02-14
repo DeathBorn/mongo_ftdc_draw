@@ -1,0 +1,11 @@
+{
+  "start":                  { "type": "total", "merged": false, "xaxis": false },
+  "serverStatus.start":     { "type": "total", "merged": false, "xaxis": false },
+
+  "serverStatus.mem.virtual": { "type": "total", "merged": false, "xaxis": "serverStatus.start", "metric": "MB"},
+  "serverStatus.tcmalloc.generic.current_allocated_bytes": { "type": "total", "merged": false, "xaxis": "serverStatus.start", "metric": "MB"},
+  "serverStatus.tcmalloc.generic.heap_size": { "type": "total", "merged": false, "xaxis": "serverStatus.start", "metric": "MB"},
+  "serverStatus.wiredTiger.cache.bytes currently in the cache": { "type": "total", "merged": false, "xaxis": "serverStatus.start", "metric": "MB"},
+
+  "end":{ "type": "total", "merged": false, "xaxis": false }
+}

@@ -1,0 +1,34 @@
+{
+  "start":                  { "type": "total", "merged": false, "xaxis": false },
+  "serverStatus.start":     { "type": "total", "merged": false, "xaxis": false },
+  "serverStatus.uptime":    { "type": "total", "merged": false, "xaxis": "serverStatus.start" },
+  "serverStatus.connections.current":      { "type": "total", "merged": false, "xaxis": "serverStatus.start" },
+  "serverStatus.network.bytesIn":          { "type": "total", "merged": false, "xaxis": "serverStatus.start" },
+  "serverStatus.network.bytesOut":         { "type": "total", "merged": false, "xaxis": "serverStatus.start" },
+  "serverStatus.network.physicalBytesIn":  { "type": "total", "merged": false, "xaxis": "serverStatus.start" },
+  "serverStatus.network.physicalBytesOut": { "type": "total", "merged": false, "xaxis": "serverStatus.start" },
+  "serverStatus.network.numRequests":      { "type": "total", "merged": false, "xaxis": "serverStatus.start" },
+  "serverStatus.opcounters.insert":  { "type": "total", "merged": "serverStatus.opcounters", "xaxis": "serverStatus.start" },
+  "serverStatus.opcounters.query":   { "type": "total", "merged": "serverStatus.opcounters", "xaxis": "serverStatus.start" },
+  "serverStatus.opcounters.update":  { "type": "total", "merged": "serverStatus.opcounters", "xaxis": "serverStatus.start" },
+  "serverStatus.opcounters.delete":  { "type": "total", "merged": "serverStatus.opcounters", "xaxis": "serverStatus.start" },
+  "serverStatus.opcounters.getmore": { "type": "total", "merged": "serverStatus.opcounters", "xaxis": "serverStatus.start" },
+  "serverStatus.opcounters.command": { "type": "total", "merged": "serverStatus.opcounters", "xaxis": "serverStatus.start" },
+  "serverStatus.wiredTiger.concurrentTransactions.write.out":          { "type": "total", "merged": false, "xaxis": "serverStatus.start" },
+  "serverStatus.wiredTiger.concurrentTransactions.write.available":    { "type": "total", "merged": false, "xaxis": "serverStatus.start" },
+  "serverStatus.wiredTiger.concurrentTransactions.write.totalTickets": { "type": "total", "merged": false, "xaxis": "serverStatus.start" },
+  "serverStatus.wiredTiger.concurrentTransactions.read.out":          { "type": "total", "merged": false, "xaxis": "serverStatus.start" },
+  "serverStatus.wiredTiger.concurrentTransactions.read.available":    { "type": "total", "merged": false, "xaxis": "serverStatus.start" },
+  "serverStatus.wiredTiger.concurrentTransactions.read.totalTickets": { "type": "total", "merged": false, "xaxis": "serverStatus.start" },
+  
+
+  "serverStatus.metrics.commands.renameCollection.total": { "type": "total", "merged": false, "xaxis": "serverStatus.start"}
+  "serverStatus.tcmalloc.generic.current_allocated_bytes": { "type": "total", "merged": false, "xaxis": "serverStatus.start"}
+  "serverStatus.wiredTiger.session.open cursor count": { "type": "total", "merged": false, "xaxis": "serverStatus.start"}
+  "serverStatus.wiredTiger.session.open session count": { "type": "total", "merged": false, "xaxis": "serverStatus.start"}
+  "serverStatus.wiredTiger.data-handle.connection data handles currently active": { "type": "total", "merged": false, "xaxis": "serverStatus.start"}
+  "serverStatus.wiredTiger.data-handle.connection sweep dhandles closed": { "type": "total", "merged": false, "xaxis": "serverStatus.start"}
+
+
+  "end":{ "type": "total", "merged": false, "xaxis": false }
+}

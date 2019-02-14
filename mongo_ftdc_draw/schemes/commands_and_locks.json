@@ -1,8 +1,6 @@
 {
   "start":                  { "type": "total", "merged": false, "xaxis": false },
   "serverStatus.start":     { "type": "total", "merged": false, "xaxis": false },
-  "serverStatus.uptime":    { "type": "total", "merged": false, "xaxis": "serverStatus.start" },
-  "serverStatus.localTime": { "type": "total", "merged": false, "xaxis": "serverStatus.start" },
 
   "serverStatus.asserts.regular":   { "type": "delta", "merged": "serverStatus.asserts", "xaxis": "serverStatus.start" },
   "serverStatus.asserts.warning":   { "type": "delta", "merged": "serverStatus.asserts", "xaxis": "serverStatus.start" },
@@ -10,20 +8,8 @@
   "serverStatus.asserts.user":      { "type": "delta", "merged": "serverStatus.asserts", "xaxis": "serverStatus.start" },
   "serverStatus.asserts.rollovers": { "type": "delta", "merged": "serverStatus.asserts", "xaxis": "serverStatus.start" },
 
-  "serverStatus.network.bytesIn":          { "type": "total", "merged": false, "xaxis": "serverStatus.start" },
-  "serverStatus.network.bytesOut":         { "type": "total", "merged": false, "xaxis": "serverStatus.start" },
-  "serverStatus.network.physicalBytesIn":  { "type": "total", "merged": false, "xaxis": "serverStatus.start" },
-  "serverStatus.network.physicalBytesOut": { "type": "total", "merged": false, "xaxis": "serverStatus.start" },
   "serverStatus.network.numRequests":      { "type": "total", "merged": false, "xaxis": "serverStatus.start" },
   
-  "serverStatus.opcountersRepl.insert":  { "type": "delta", "merged": "serverStatus.opcountersRepl", "xaxis": "serverStatus.start" },
-  "serverStatus.opcountersRepl.query":   { "type": "delta", "merged": "serverStatus.opcountersRepl", "xaxis": "serverStatus.start" },
-  "serverStatus.opcountersRepl.update":  { "type": "delta", "merged": "serverStatus.opcountersRepl", "xaxis": "serverStatus.start" },
-  "serverStatus.opcountersRepl.delete":  { "type": "delta", "merged": "serverStatus.opcountersRepl", "xaxis": "serverStatus.start" },
-  "serverStatus.opcountersRepl.getmore": { "type": "delta", "merged": "serverStatus.opcountersRepl", "xaxis": "serverStatus.start" },
-  "serverStatus.opcountersRepl.command": { "type": "delta", "merged": "serverStatus.opcountersRepl", "xaxis": "serverStatus.start" },
-
-
 "serverStatus.opcounters.insert":  { "type": "delta", "merged": "serverStatus.opcounters", "xaxis": "serverStatus.start" },
 "serverStatus.opcounters.query":   { "type": "delta", "merged": "serverStatus.opcounters", "xaxis": "serverStatus.start" },
 "serverStatus.opcounters.update":  { "type": "delta", "merged": "serverStatus.opcounters", "xaxis": "serverStatus.start" },
@@ -38,9 +24,6 @@
 
 "serverStatus.connections.current": { "type": "total", "merged": false, "xaxis": "serverStatus.start"},
 
-"serverStatus.wiredTiger.session.open cursor count":  { "type": "total", "merged": false, "xaxis": "serverStatus.start"},
-"serverStatus.wiredTiger.session.open session count": { "type": "total", "merged": false, "xaxis": "serverStatus.start"}, 
-
 
 "systemMetrics.cpu.num_cpus":   { "type":"total", "merged": false, "xaxis":"serverStatus.start" },
 "systemMetrics.cpu.user_ms":    { "type":"delta", "merged": "systemMetrics.cpu", "xaxis":"serverStatus.start" },
@@ -50,26 +33,6 @@
 "systemMetrics.cpu.iowait_ms":  { "type":"delta", "merged": "systemMetrics.cpu", "xaxis":"serverStatus.start" },
 "systemMetrics.cpu.softirq_ms": { "type":"delta", "merged": "systemMetrics.cpu", "xaxis":"serverStatus.start" },
 "systemMetrics.cpu.steal_ms":   { "type":"delta", "merged": "systemMetrics.cpu", "xaxis":"serverStatus.start" },
-
-"systemMetrics.memory.MemTotal_kb": { "type":"total", "merged":"systemMetrics.memory", "xaxis":"serverStatus.start", "metric": "KB"},
-"systemMetrics.memory.MemFree_kb":  { "type":"total", "merged":"systemMetrics.memory", "xaxis":"serverStatus.start", "metric": "KB"},
-"systemMetrics.memory.Cached_kb":   { "type":"total", "merged":"systemMetrics.memory", "xaxis":"serverStatus.start", "metric": "KB"},
-
-"serverStatus.tcmalloc.generic.current_allocated_bytes": { "type": "total", "merged": false, "xaxis": "serverStatus.start", "metric": "MB"},
-
-"local.oplog.rs.stats.wiredTiger.cache.bytes read into cache":    { "type":"total", "merged":"", "xaxis":"serverStatus.start", "metric": "MB"},
-"local.oplog.rs.stats.wiredTiger.cache.bytes written from cache": { "type":"total", "merged":"", "xaxis":"serverStatus.start", "metric": "MB"},
-
-
-"serverStatus.wiredTiger.cache.maximum bytes configured":     { "type": "total", "merged": "serverStatus.wiredTiger.cache", "xaxis": "serverStatus.start", "metric": "MB"},
-"serverStatus.wiredTiger.cache.bytes currently in the cache": { "type": "total", "merged": "serverStatus.wiredTiger.cache", "xaxis": "serverStatus.start", "metric": "MB"},
-"serverStatus.wiredTiger.log.total log buffer size":          { "type": "total", "merged": false, "xaxis": "serverStatus.start", "metric": "MB"},
-
-"serverStatus.wiredTiger.data-handle.connection data handles currently active": { "type": "delta", "merged": "serverStatus.wiredTiger.data-handle", "xaxis": "serverStatus.start"},
-"serverStatus.wiredTiger.data-handle.connection sweep dhandles closed":         { "type": "delta", "merged": "serverStatus.wiredTiger.data-handle", "xaxis": "serverStatus.start"},
-
-"serverStatus.wiredTiger.cache.modified pages evicted":   { "type": "delta", "merged":"serverStatus.wiredTiger.cache.evicted", "xaxis":"serverStatus.start"},
-"serverStatus.wiredTiger.cache.unmodified pages evicted": { "type": "delta", "merged":"serverStatus.wiredTiger.cache.evicted", "xaxis":"serverStatus.start"},
 
 "serverStatus.metrics.queryExecutor.scanned":        { "type": "delta", "merged":"serverStatus.metrics.queryExecutor", "xaxis":"serverStatus.start"},
 "serverStatus.metrics.queryExecutor.scannedObjects": { "type": "delta", "merged":"serverStatus.metrics.queryExecutor", "xaxis":"serverStatus.start"},
@@ -145,9 +108,6 @@
 "serverStatus.locks.Metadata.timeAcquiringMicros.W": { "type":"delta", "merged":false, "xaxis":"serverStatus.start"},
 "serverStatus.locks.oplog.acquireCount.r":           { "type":"delta", "merged":"serverStatus.locks.oplog.acquireCount", "xaxis":"serverStatus.start"},
 "serverStatus.locks.oplog.acquireCount.w":           { "type":"delta", "merged":"serverStatus.locks.oplog.acquireCount", "xaxis":"serverStatus.start"},
-
-"serverStatus.wiredTiger.concurrentTransactions.write.totalTickets": { "type":"total", "merged":"","xaxis":"serverStatus.start"},
-"serverStatus.wiredTiger.concurrentTransactions.read.totalTickets":  { "type":"total", "merged":"","xaxis":"serverStatus.start"},
 
 "serverStatus.wiredTiger.transaction.transaction begins":                         { "type": "delta", "merged":"serverStatus.wiredTiger.transaction", "xaxis":"serverStatus.start"},
 "serverStatus.wiredTiger.transaction.transaction checkpoints":                    { "type": "delta", "merged":"serverStatus.wiredTiger.transaction", "xaxis":"serverStatus.start"},

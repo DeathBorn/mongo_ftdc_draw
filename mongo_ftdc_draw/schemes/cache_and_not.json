@@ -1,0 +1,8 @@
+{
+  "start":                  { "type": "total", "merged": false, "xaxis": false },
+  "serverStatus.start":     { "type": "total", "merged": false, "xaxis": false },
+
+  "serverStatus.wiredTiger.data-handle.connection sweep dhandles closed":         { "type": "total", "merged": false, "xaxis": "serverStatus.start"},
+
+  "end":{ "type": "total", "merged": false, "xaxis": false }
+}

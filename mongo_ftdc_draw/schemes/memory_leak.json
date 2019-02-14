@@ -1,0 +1,32 @@
+{
+  "start":                  { "type": "total", "merged": false, "xaxis": false },
+  "serverStatus.start":     { "type": "total", "merged": false, "xaxis": false },
+
+  "serverStatus.opcounters.insert":  { "type": "delta", "merged": "serverStatus.opcounters", "xaxis": "serverStatus.start" },
+  "serverStatus.opcounters.query":   { "type": "delta", "merged": "serverStatus.opcounters", "xaxis": "serverStatus.start" },
+  "serverStatus.opcounters.update":  { "type": "delta", "merged": "serverStatus.opcounters", "xaxis": "serverStatus.start" },
+  "serverStatus.opcounters.delete":  { "type": "delta", "merged": "serverStatus.opcounters", "xaxis": "serverStatus.start" },
+  "serverStatus.opcounters.getmore": { "type": "delta", "merged": "serverStatus.opcounters", "xaxis": "serverStatus.start" },
+  "serverStatus.opcounters.command": { "type": "delta", "merged": "serverStatus.opcounters", "xaxis": "serverStatus.start" },
+  
+  "serverStatus.metrics.cursor.timedOut":      { "type": "delta", "merged": false, "xaxis": "serverStatus.start"},
+  "serverStatus.metrics.cursor.open.noTimeout":{ "type": "total", "merged": false, "xaxis": "serverStatus.start"},
+  "serverStatus.metrics.cursor.open.pinned":   { "type": "total", "merged": false, "xaxis": "serverStatus.start"},
+  "serverStatus.metrics.cursor.open.total":    { "type": "total", "merged": false, "xaxis": "serverStatus.start"},
+  
+  "serverStatus.connections.current": { "type": "total", "merged": false, "xaxis": "serverStatus.start"},
+  
+  "serverStatus.wiredTiger.session.open cursor count":  { "type": "total", "merged": false, "xaxis": "serverStatus.start"},
+  "serverStatus.wiredTiger.session.open session count": { "type": "total", "merged": false, "xaxis": "serverStatus.start"}, 
+  
+  "serverStatus.tcmalloc.generic.current_allocated_bytes": { "type": "total", "merged": false, "xaxis": "serverStatus.start"},
+
+  "serverStatus.wiredTiger.cache.maximum bytes configured":     { "type": "total", "merged": "serverStatus.wiredTiger.cache", "xaxis": "serverStatus.start"},
+  "serverStatus.wiredTiger.cache.bytes currently in the cache": { "type": "total", "merged": "serverStatus.wiredTiger.cache", "xaxis": "serverStatus.start"}, 
+  "serverStatus.wiredTiger.log.total log buffer size":          { "type": "total", "merged": false, "xaxis": "serverStatus.start"},
+
+  "serverStatus.wiredTiger.data-handle.connection data handles currently active": { "type": "total", "merged": false, "xaxis": "serverStatus.start"},
+  "serverStatus.wiredTiger.data-handle.connection sweep dhandles closed":         { "type": "total", "merged": false, "xaxis": "serverStatus.start"},
+
+  "end":{ "type": "total", "merged": false, "xaxis": false }
+}
