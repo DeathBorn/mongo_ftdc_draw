@@ -1,1 +1,2 @@
 v0.1, 2018-04-01 -- Initial release.
+v0.1.1, 2019-02-14 -- More schemes and some other improvements.

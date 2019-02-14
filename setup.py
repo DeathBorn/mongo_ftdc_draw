@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
   name='mongo_ftdc_draw',
-  version='0.1.0',
+  version='0.1.1',
   author='Vilius Okockis',
   packages=['mongo_ftdc_draw'],
   include_package_data=True,
